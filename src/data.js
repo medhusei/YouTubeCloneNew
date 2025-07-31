@@ -1,3 +1,5 @@
+import API_KEY from './config';
+
 export const value_converter = (value) => {
   if (value >= 1000000) {
     return Math.floor(value / 1000000) + "M";
@@ -7,3 +9,5 @@ export const value_converter = (value) => {
     return value;
   }
 };
+
+export default API_KEY;
